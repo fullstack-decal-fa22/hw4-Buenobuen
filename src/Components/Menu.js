@@ -1,11 +1,14 @@
 import React from 'react';
-/* Add any imports you think you might need here! */
+import Color from './Color'
 
-const Menu = () => { 
+const Menu = (props) => { 
 
     return (
       <div className="colorOptions">
-          {/* TODO */}
+          <Color handleClick = {props.handleClick} color = "yellow"> </Color>
+          <Color handleClick = {props.handleClick} color = "purple"> </Color>
+          <Color handleClick = {props.handleClick} color = "green"> </Color>
+          <Color handleClick = {props.handleClick} color = "orange"> </Color>
       </div>
     );
 }
